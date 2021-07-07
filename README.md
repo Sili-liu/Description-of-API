@@ -1,5 +1,5 @@
 # Description-of-API
 
-->This is the demo code of this project.
+This is the demo code of this project.
 
-->Runing the demo project by the python file "wotsky_iot.py"
+Runing the demo project by the python file "wotsky_iot.py" or with python notebook "wotsky_IoT.ipynb"
