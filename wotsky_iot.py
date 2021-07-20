@@ -124,7 +124,7 @@ for name, algorithm in algorithms.items():
   predictions = pipeline.predict(X_test)
   report = classification_report(y_test, predictions, output_dict=True, zero_division='warn')
   fscores.append([name, report['Sensor']['f1-score'], report['Actuator']['f1-score'], report['None']['f1-score']])
-  score.append([name, (report['Sensor']['precision'],report['Sensor']['recall']), (report['Actuator']['precision'],report['Actuator']['recall']), (report['None']['precision'],report['None']['precision'])])
+  score.append([name, (report['Sensor']['precision'],report['Sensor']['recall']), (report['Actuator']['precision'],report['Actuator']['recall']), (report['None']['precision'],report['None']['recall'])])
   print(name)
   print(classification_report(y_test, predictions))
   print("************************************")
